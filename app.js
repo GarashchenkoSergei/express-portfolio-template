@@ -4,7 +4,7 @@ const path = require('path')
 const logger = require('morgan')
 const flash = require('connect-flash')
 const cookieParser = require('cookie-parser')
-const session = require('express-session')
+const session = require('cookie-session')
 
 const mainRouter = require('./routes/')
 
@@ -19,7 +19,7 @@ app.use(session({
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true,
-  cookie: { maxAge: 300000 }
+  cookie: { maxAge: 3000000 }
 }))
 app.use(flash())
 
