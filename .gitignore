@@ -38,3 +38,5 @@ build
 # Node.JS
 node_modules
 npm-debug.log
+
+config.json

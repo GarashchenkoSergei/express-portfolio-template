@@ -63,5 +63,11 @@
       "name": "Вино вдохновение",
       "price": 600
     }
+  ],
+  "users": [
+    {
+      "email": "test@test.com",
+      "hash": "$2b$10$JXt9FoYIEGPgzL2gW3Zb.O4A.uDT1I/nMApW8.0WyyTlGlhM7sEkK"
+    }
   ]
 }

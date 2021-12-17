@@ -2,6 +2,9 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/', (req, res, next) => {
+  if (!req.session.authorization) {
+    return res.redirect('/login');
+  }
   // TODO: Реализовать, подстановку в поля ввода формы 'Счетчики'
   // актуальных значений из сохраненых (по желанию)
   res.render('pages/admin', { title: 'Admin page' })
